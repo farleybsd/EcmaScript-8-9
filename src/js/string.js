@@ -16,3 +16,9 @@ const nomeCompletoPadEnd = nome.padEnd(12,sobrenome)
 
 document.getElementById('stringpadEnd').innerHTML =
 nomeCompletoPadEnd;
+
+// Cartao
+ const numeroCartao = '4890'
+
+ document.getElementById('numeroCartao').innerHTML =
+ numeroCartao.padStart(16,'*')
