@@ -9,7 +9,14 @@ function tabelaAlimentos(){
     } 
     return {
 
-        get : (nome , id) => tabelas[nome][id]
+        get : (nome , id) => tabelas[nome][id],
+        asyncGet : (nome , id) => delay(50).then(()=>{
+            tabelas[nome][id] 
+        })
+    }
+
+    function delay(ms){
+        return new Promise(resolve => setTimeout(resolve,ms))
     }
 
 }
